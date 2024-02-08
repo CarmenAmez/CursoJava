@@ -1,0 +1,45 @@
+body{
+    background-color:#B8C480;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    text-align: end;
+    background-color: #922D50;
+    margin-top: auto;
+    padding: 10px;
+}
+.move{
+    margin-left: 250px;
+    margin-right: 250px;
+    line-height: 25px;
+    border-bottom: 5px solid black;
+}
+h2{
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #D4E79E;
+}
+.centro{
+    text-align: center;
+}
+.Lorem{
+    color: #3C1B43;
+    border-bottom: 2px solid #501537;
+    text-align: justify;
+}
+.second{
+    border-bottom: 2px solid #501537;
+    font-family: 'Courier New', Courier, monospace;
+}
+p .fecha{
+    background-color: #922D50;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+    text-align: center;
+    
+}

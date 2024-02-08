@@ -1,0 +1,18 @@
+.box{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid gray;
+    margin: auto;
+}
+.flower{
+    width: 200px;
+    border-right: 1px solid grey;
+}
+.list{
+    list-style: none;
+}
+.text{
+    width: 670px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
