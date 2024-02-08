@@ -1,0 +1,18 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+}
+h1{
+    text-align: right;
+}
+.lorem{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.beatae{
+    background-color: rgb(226, 165, 43);
+}
+.nihil{
+    color: brown;
+    border-bottom: 2px solid black;
+}
