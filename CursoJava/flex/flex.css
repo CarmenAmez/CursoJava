@@ -1,18 +1,27 @@
+body{
+    background: linear-gradient(#648381, #E4FDE1);
+    margin: 0;
+}
 .box{
+    background: linear-gradient(#E4FDE1, #648381);
     display: flex;
     justify-content: center;
-    border-top: 2px solid gray;
+    border-top: 2px solid #575761;
     margin: auto;
 }
 .flower{
     width: 200px;
-    border-right: 1px solid grey;
+    border-right: 1px solid #575761;
 }
 .list{
+    text-decoration: none;
     list-style: none;
 }
 .text{
     width: 670px;
     margin-left: 20px;
     box-sizing: border-box;
+}
+hr{
+    border-color: #575761;
 }
