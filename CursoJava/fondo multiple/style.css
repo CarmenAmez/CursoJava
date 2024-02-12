@@ -1,0 +1,8 @@
+.box{
+    height: 400px;
+    width: 400px;
+    background: url(./mundo.svg),no-repeat bottom right url(./tijeras.svg), radial-gradient( #4b46e4 0%, #b92be4 52%, #eda7e3 100%);
+}
+.box{
+    background-size: 50% 50%, auto auto, auto auto;
+}

@@ -1,0 +1,39 @@
+*{
+    background-color: bisque;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-family:fuente;
+    color: rgb(36, 32, 32);
+    font-size: 2rem;
+}
+@font-face {
+    font-family:fuente;
+    src: url(./fuente.ttf);
+}
+.bigbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    border: 3px dashed burlywood;
+    background-color: antiquewhite;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+.lorem:first-of-type:first-letter{
+        font-size: 2em;
+        float: left;
+        color: brown;
+}
+.lorem{
+    background-color: antiquewhite;
+    text-align: justify;
+    font-size: 16px;
+    font-family: fuente;
+}

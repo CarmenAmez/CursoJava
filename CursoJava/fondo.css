@@ -1,0 +1,9 @@
+div{
+    background-image: url(./fondo.png);
+    height: 900px;
+    width: 700px;
+}
+h1{
+    padding-left: 100px;
+    padding-top: 20px;
+}

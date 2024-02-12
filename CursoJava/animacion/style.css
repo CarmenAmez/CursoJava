@@ -1,0 +1,21 @@
+.trans {
+    background-color: pink;
+    width: 200px;
+    transition: 3s;
+}
+
+.trans:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+
+.hola {
+    margin-top: 100px;
+    margin-left: 100px;
+    text-shadow: 60px 60px 2px rgb(235, 146, 202), -60px -60px 2px rgb(146, 146, 238), -60px 60px 2px rgb(130, 239, 157), 60px -60px 2px rgb(237, 204, 143);
+    transition: 2s;
+}
+.hola:hover {
+    text-shadow: -60px -60px 2px rgb(146, 146, 238), 60px 60px 2px rgb(235, 146, 202), 60px -60px 2px rgb(239, 204, 130), -60px 60px 2px rgb(143, 237, 155);
+    transition: 3s;
+}

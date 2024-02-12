@@ -1,0 +1,20 @@
+div{
+    border-width: 30px;
+    border-style: solid;
+    padding: 10px;
+}
+.mundo{
+    border-width: 35px;
+		padding: 20px;
+		-webkit-border-image:url(./mundo\ \(1\).svg); 
+		border-image:url(./mundo\ \(1\).svg);
+		border-style:solid
+}
+.estrecho{
+    -webkit-border-image:url(./border.png) 30 30 stretch;
+	border-image:url(./border.png) 30 30 stretch;
+}
+.ancho{
+    -webkit-border-image:url(./border.png) 30 30 round;
+	border-image:url(./border.png) 30 30 round;
+}
