@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .trans {
     background-color: pink;
     width: 200px;
@@ -15,7 +19,55 @@
     text-shadow: 60px 60px 2px rgb(235, 146, 202), -60px -60px 2px rgb(146, 146, 238), -60px 60px 2px rgb(130, 239, 157), 60px -60px 2px rgb(237, 204, 143);
     transition: 2s;
 }
+
 .hola:hover {
-    text-shadow: -60px -60px 2px rgb(146, 146, 238), 60px 60px 2px rgb(235, 146, 202), 60px -60px 2px rgb(239, 204, 130), -60px 60px 2px rgb(143, 237, 155);
-    transition: 3s;
+    text-shadow: -60px -60px 2px rgb(24, 24, 199), 60px 60px 2px rgb(233, 53, 167), 60px -60px 2px rgb(231, 168, 32), -60px 60px 2px rgb(27, 229, 54);
+    transition: 2s;
+}
+
+.move {
+    padding-top: 30px;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    color: black;
+    font-size: 3rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+    background: url(./Yo.png) no-repeat 90px 30px,linear-gradient( #f7187c 0%,#bc23b2 30%,#8349bc 69%,#763c93 100%);
+    background-size: cover;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover{
+    color:#f7187c;
+    background-position: center;
+}
+.container{
+    padding-top: 30px;
+}
+.box{
+    font-size: 20px;
+    background-color: #763c93;
+    width: 300px;
+    height: 300px;
+    transition: font-size 5s, background-color 20s, width 10s, height 10s;
+}
+.box:hover{
+    color: #f7187c;
+    font-size: 250px;
+    background-color: #700937;
+    width: 500px;
+    height: 500px;
 }
