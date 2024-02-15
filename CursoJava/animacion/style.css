@@ -9,19 +9,19 @@
 }
 
 .trans:hover {
-    background-color: red;
+    background-color: #763c93;
     transition: 0.5s;
 }
 
 .hola {
     margin-top: 100px;
     margin-left: 100px;
-    text-shadow: 60px 60px 2px rgb(235, 146, 202), -60px -60px 2px rgb(146, 146, 238), -60px 60px 2px rgb(130, 239, 157), 60px -60px 2px rgb(237, 204, 143);
+    text-shadow: 60px 60px 2px rgb(235, 146, 202), -60px -60px 2px rgb(146, 146, 238), -60px 60px 2px #700937, 60px -60px 2px #f7187c;
     transition: 2s;
 }
 
 .hola:hover {
-    text-shadow: -60px -60px 2px rgb(24, 24, 199), 60px 60px 2px rgb(233, 53, 167), 60px -60px 2px rgb(231, 168, 32), -60px 60px 2px rgb(27, 229, 54);
+    text-shadow: -60px -60px 2px rgb(24, 24, 199), 60px 60px 2px rgb(233, 53, 167), 60px -60px 2px #f7187c, -60px 60px 2px #700937;
     transition: 2s;
 }
 
@@ -70,4 +70,33 @@ a:hover{
     background-color: #700937;
     width: 500px;
     height: 500px;
+}
+
+.escal{
+    font-size: 20px;
+}
+p:hover span{
+    transition: 3s;
+
+}
+p:hover .h{
+    font-size: 20px;
+    color: #bc23b2;
+    transition: 3s;
+
+}
+p:hover .o{
+    font-size:40px;
+    color: #8349bc;
+    transition: 3s;
+}
+p:hover .l{
+    font-size: 80px;
+    color: #763c93;
+    transition: 3s;
+}
+p:hover .a{
+    font-size: 120px;
+    color: #700937;
+    transition: 3s;
 }

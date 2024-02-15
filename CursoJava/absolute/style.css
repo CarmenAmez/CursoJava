@@ -1,0 +1,63 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8a86c0;
+}
+h1{
+    padding: 5px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+#sub p{
+    border: 2px solid #9F86C0;
+    background-color: #5E548E;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.box{
+    position: relative;
+    height: 100px;
+    width: 1200px;
+}
+.prim{
+    position: absolute;
+    background-color: aliceblue;
+    border: 3px solid orange;
+    : 50%;
+}
+.seg{
+    position: absolute;
+    background-color: aqua;
+    border:3px solid orange;
+    width: 50%;
+    left: 300px;
+
+}
+.ter{
+    position: absolute;
+    background-color: bisque;
+    border: 3px solid olive;
+    width: 50%;
+    top: 100px;
+}
+.cuart{
+    position: absolute;
+    background-color: olive;
+    border: 3px solid aqua;
+    width: 50%;
+    top: 100px;
+    left: 300px;
+}
+.medio{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    background-color: orange;
+    border: 3px solid aliceblue;
+    padding: 20px;
+    top:60%;
+}
+.box:hover{
+    z-index: 2;
+}
