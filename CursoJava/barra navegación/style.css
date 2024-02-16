@@ -59,7 +59,8 @@ a:hover .flot{
     width: 200px;
     padding: 10px;
     background-image: url(../bg-2.jpg);
-    background-size: 
+    background-size: cover;
     border-radius: 15px;
-
 }
+
+

@@ -1,0 +1,27 @@
+.boxe{
+    width: 500px;
+    height: 400px;
+    background-color: black;
+}
+.boxe img{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+
+}
+.boxe p{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 0;
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    transition: 2s;
+    margin-top: 0;
+}
+.boxe:hover p {
+    opacity: 50%;
+}

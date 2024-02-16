@@ -38,65 +38,94 @@ li {
     list-style: none;
 }
 
-a{
+a {
     color: black;
-    font-size: 3rem;
+    font-size: 1.5rem;
     border: 3px solid black;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 5px;
-    background: url(./Yo.png) no-repeat 90px 30px,linear-gradient( #f7187c 0%,#bc23b2 30%,#8349bc 69%,#763c93 100%);
+    background: url(./Yo.png) no-repeat 90px 30px, linear-gradient(#f7187c 0%, #bc23b2 30%, #8349bc 69%, #763c93 100%);
     background-size: cover;
     text-decoration: none;
     transition: 0.5s;
 }
-a:hover{
-    color:#f7187c;
+
+a:hover {
+    color: #f7187c;
     background-position: center;
 }
-.container{
+
+.container {
     padding-top: 30px;
 }
-.box{
-    font-size: 20px;
+
+.box {
+    font-size: 15px;
     background-color: #763c93;
     width: 300px;
     height: 300px;
     transition: font-size 5s, background-color 20s, width 10s, height 10s;
 }
-.box:hover{
+
+.box:hover {
     color: #f7187c;
-    font-size: 250px;
+    font-size: 200px;
     background-color: #700937;
     width: 500px;
     height: 500px;
 }
 
-.escal{
+.escal {
     font-size: 20px;
 }
-p:hover span{
+
+p:hover span {
     transition: 3s;
 
 }
-p:hover .h{
+
+p:hover .h {
     font-size: 20px;
     color: #bc23b2;
     transition: 3s;
-
 }
-p:hover .o{
-    font-size:40px;
+
+p:hover .o {
+    font-size: 40px;
     color: #8349bc;
     transition: 3s;
 }
-p:hover .l{
+
+p:hover .l {
     font-size: 80px;
     color: #763c93;
     transition: 3s;
 }
-p:hover .a{
+
+p:hover .a {
     font-size: 120px;
     color: #700937;
     transition: 3s;
+}
+.barra{
+    width: 400px;
+    border: 2px solid black;
+}
+.vida{
+    width: 300px;
+    height: 30px;
+    background-image: url(./corazon-mask.png);
+    background-size: auto 100%;
+    background-color: rgb(183, 0, 255);
+    animation: move 2s forwards;
+}
+
+@keyframes move{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 83%;
+    }
 }
