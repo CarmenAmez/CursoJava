@@ -2,6 +2,7 @@
     width: 500px;
     height: 400px;
     background-color: black;
+    position: relative;
 }
 .boxe img{
     width: 500px;
@@ -9,7 +10,7 @@
     position: absolute;
 
 }
-.boxe p{
+p {
     position: absolute;
     font-size: 30px;
     text-align: center;
