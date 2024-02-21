@@ -1,14 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     margin: auto;
     width: 1020px;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     padding-top: 10px;
@@ -16,28 +18,33 @@ header{
     background-color: #97a97cf3;
     opacity: 07;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-nav ul li{
+
+nav ul li {
     font-size: 1.5rem;
     margin-left: 80px;
     margin-right: 80px;
     padding: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #485336;
     text-decoration: none;
     padding: 10px;
 }
+
 nav ul li a:hover {
     background-color: #718355;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.name{
+
+.name {
     background-color: #333333;
     height: 400px;
     display: flex;
@@ -45,88 +52,106 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-.name h1{
+
+.name h1 {
     color: white;
     font-size: 5rem;
     text-transform: uppercase;
 }
-.name h2{
+
+.name h2 {
     color: white;
 }
 
-.box{
+.box {
     display: flex;
     width: 1020px;
     margin: auto;
     padding-bottom: 50px;
 }
-.left{
+
+.left {
     display: inline-block;
     width: 700px;
     padding-top: 30px;
     text-align: justify;
     margin-right: 30px;
 }
-.right{
+
+.right {
     display: inline-block;
     width: 300px;
     padding-top: 30px;
 }
-.left h1{
+
+.left h1 {
     color: #485336;
     padding-bottom: 10px;
 }
-.left h2{
+
+.left h2 {
     color: gray;
     padding-bottom: 5px;
 }
-.right h1{
+
+.right h1 {
     color: #485336;
     padding-bottom: 4px;
 }
-.right ul{
+
+.right ul {
     list-style: none;
 }
+
 .right ul li {
     padding-bottom: 15px;
     text-decoration: none;
 }
-.right ul li a{
+
+.right ul li a {
     color: black;
 }
-.footer{
+
+.footer {
     background-color: #333333;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     display: flex;
-    text-align: center
+    text-align: center;
 }
-.col{
+
+.col {
     display: inline-block;
     width: 300px;
     padding-top: 30px;
 }
-.col h1{
+
+.col h1 {
     color: white;
     padding-bottom: 30px;
 }
+
 .col ul li {
     padding-bottom: 15px;
     text-decoration: none;
     list-style: none;
 }
-.col ul li a{
+
+.col ul li a {
     color: white;
 }
-.col p{
+
+.col p {
     color: white;
     text-align: justify;
 }
-.col img{
+
+.col img {
     padding: 5px;
 }
-.footer2{
+
+.footer2 {
     background-color: #97a97cf3;
-    height: 150px;
+    padding: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
