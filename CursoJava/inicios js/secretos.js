@@ -1,4 +1,4 @@
-const rNumber = Math.floor(Math.random() * 5) + 1;
+const rNumber = Math.floor(Math.random() * 10) + 1;
 let jugando = true;
 let attempts = 0;
 while (jugando) {
@@ -6,8 +6,11 @@ while (jugando) {
     if (userNumber === rNumber) {
         alert('¡Ganaste!');
         attempts = false;
+    } else if ( rNumber < 5){
+        alert('Ese no era! l número es menor a 5.')
+    } else if ( rNumber > 5){
+        alert('Ese no era. El número es mayor a 5 ')
     } else {
-        alert('Oooooh! Ese no era.');
         attempts++;
         if (attempts === 3) {
             jugando = false;
