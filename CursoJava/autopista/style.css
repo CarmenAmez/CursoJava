@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./autopista/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div{
+    display: block;
+}
+.menu{
+    background-color: #faedcd;
+    opacity: 10;
+    list-style: none;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.menu ul {
+    justify-content: center;
+    list-style: none;
+    box-sizing: border-box;
+}
+.menu li {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.menu li a {
+    color: #3c6e71;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu li a:hover {
+    background-color: #b0c4b1;
+}
+.titulo h1{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 3rem;
+}
+.titulo p{
+    text-align: center;
+    justify-content: center;
+    border-bottom: 2px solid grey;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.container {
+    margin-top: 15px;
+    display: flex;
+    gap: 35px;
+    justify-content: space-evenly;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.fondo{
+    margin-top: 15px;
+    display: flex;
+    gap: 35px;
+    justify-content: space-evenly;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.medio{
+    margin-top: 450px;
+    background-color: #f9f2e2;
+}
+.box{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.box h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.box p{
+    text-align: justify;
+}
+.box a{
+    color: #faedcd ;
+    text-decoration: none;
+    display: block;
+    background-color: #3c6e71;
+    padding: 10px 100px;
+    font-size: 20px;
+}
+.colum{
+    margin-top: 10px;
+}
+img{
+    max-width: 100%;
+}
+.final{
+    background-color: #3c6e71;
+    height: 200px;
+}
+.dentro{
+    width: 1024px;
+    margin: auto;
+}
+.dentro h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px;
+}
+.dentro p{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.bajo{
+    text-align: center;
+    padding: 100px;
+    color: #d8e4de;
+}
+
+
