@@ -6,10 +6,6 @@ while (jugando) {
     if (userNumber === rNumber) {
         alert('¡Ganaste!');
         attempts = false;
-    } else if ( rNumber < 5){
-        alert('Ese no era! l número es menor a 5.')
-    } else if ( rNumber > 5){
-        alert('Ese no era. El número es mayor a 5 ')
     } else {
         attempts++;
         if (attempts === 3) {
