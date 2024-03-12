@@ -3,24 +3,24 @@ const replaceAt = (string, character, index) => {
 }
 
 const words = ['javascript', 'funcion', 'constante', 'bucle'];
-const secretWords = words[Math.floor(Math.random() * words.length)];
+const secretWord = words[Math.floor(Math.random() * words.length)];
 
-let underscoreWord = secretWords.replace(/./g, "_ ");
+let underscoreWord = secretWord.replace(/./g, "_ ");
 let win = false;
 
 while (!win) {
     alert(underscoreWord)
-    const putWord = prompt('Escriba una letra');
-    let foundWord = false;
-    for (let i = 0; i < secretWords.length; i++) {
-        if (secretWords[i] === putWord) {
-            underscoreWord = replaceAt(underscoreWord, putWord, i*2);
-            foundWord = true;
+    const putLetter = prompt('Escriba una letra');
+    let foundLetter = false;
+    for (let i = 0; i < secretWord.length; i++) {
+        if (secretWord[i] === putLetter) {
+            underscoreWord = replaceAt(underscoreWord, putLetter, i*2);
+            foundLetter = true;
         }
     }if (underscoreWord.indexOf("_") == -1) {
-        alert('Has ganado!' + ' Efectivamente era: ' + ' ' + secretWords);
+        alert('Has ganado!' + ' Efectivamente era: ' + ' ' + secretWord);
         win = true;
-    } if (!foundWord) {
+    } if (!foundLetter) {
         alert("Has fallado");
     }
 }
