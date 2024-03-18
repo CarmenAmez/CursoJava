@@ -1,0 +1,31 @@
+<form>
+	<label for="campoEuro">Euros: </label><input type="text" id="campoEuro">
+    <br>
+    <label for="campoDolares">Dólares: </label><input type="text" id="campoDolares">
+	<button type="button">Calcular</button>
+</form>
+
+<script>
+	const calcular = () =>{
+		const euros = document.querySelector('#campoEuro').value;
+        document.querySelector('#campoDolares').value = euros * 2;
+	}
+	document.querySelector('button').addEventListener('click', calcular);
+</script>
+
+<hr>
+
+<form>
+	<label for="campoGrados">Centígrados: </label><input type="text" id="campoGrados">
+    <br>
+    <label for="campoFahrenheit">Fahrenheit: </label><input type="text" id="campoFahrenheit">
+	<button type="button">Calcular</button>
+</form>
+
+<script>
+	const calculate = () =>{
+		const grados = document.querySelector('#campoGrados').value;
+        document.querySelector('#campoFahrenheit').value = grados * 9 / 5 + 32 ;
+	}
+	document.querySelector('button').addEventListener('click', calculate);
+</script>

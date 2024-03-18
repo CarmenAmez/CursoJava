@@ -1,0 +1,48 @@
+<form action="">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombreCliente">
+    <br>
+    <br>
+    <label for="material">Material de la caja: </label>
+    <select name="" id="materialCaja">
+        <option value="nada">...</option>
+        <option value="madera">Madera</option>
+        <option value="plastico">Plástico</option>
+        <option value="Metal">Metal</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="size">Selecione las dimensiones de la caja: </label><br>
+    <input type="radio" name="dimens" id="size" value="Extra-Grande.">Extra-Grande.<br>
+    <input type="radio" name="dimens" id="size" value="Grande.">Grande.<br>
+    <input type="radio" name="dimens" id="size" value="Mediana.">Mediana.<br>
+    <input type="radio" name="dimens" id="size" value="Pequeña.">Pequeña.
+
+    <br>
+    <br>
+
+    <label for="comentario">Comentario: </label><br>
+    <textarea id="comentarios" cols="40" rows="10"></textarea>
+
+    <br>
+    <br>
+
+    <button type="button">Enviar</button>
+    <br>
+    <br>
+    <input type="text" id="pedido" style="width: 800px;">
+</form>
+
+<script>
+    const pedidoCliente = () => {
+        const nombre = document.querySelector('#nombreCliente').value;
+        const caja = document.querySelector('#materialCaja').value;
+        const size = document.querySelector('[name=dimens]:checked').value;
+        const coment = document.querySelector('#comentarios').value;
+        const pedido = nombre + ' ha pedido una caja de ' + caja + ' y de tamaño ' + size + ' Nos deja tambien un comentario diciendo: ' + '"' + coment + '"';
+        document.querySelector('#pedido').value = pedido;
+    }
+    document.querySelector('button').addEventListener('click', pedidoCliente);
+</script>

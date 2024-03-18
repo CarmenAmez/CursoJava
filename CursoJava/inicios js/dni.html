@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>Obtener letra DNI</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="dni">Introduce un dni sin la letra: </label><input id="dni" type="text">
+        <p>La letra del DNI es: <input type="text" id="letter"></p>
+        <button type="button" id="calculate">Calcular</button>
+    </form>
+    <script>
+    const calculateLetterDni = () =>{
+        const dni = parseInt(document.querySelector('#dni').value) % 23;
+        const letter = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
+        document.querySelector('#letter').value = letter[dni];
+    }
+        
+        document.querySelector('button').addEventListener('click', calculateLetterDni);
+    </script>
+</body>
+
+</html>
