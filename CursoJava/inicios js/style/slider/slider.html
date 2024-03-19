@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+            display: flex;
+            width: 1540px;
+            transition: 1s;
+        }
+
+        .container {
+            width: 256px;
+            height: 256px;
+            overflow: hidden;
+        }
+
+        .pic {
+            width: 256px;
+            height: 256px;
+        }
+
+        .link {
+            background-image: url(../tuxes/PinguLinux_Link_Zelda.png);
+        }
+
+        .marilyn {
+            background-image: url(../tuxes/PinguLinux_Marilyn_Monroe.png);
+        }
+
+        .pikachu {
+            background-image: url(../tuxes/PinguLinux_Pikachu.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="btn">Pasar Foto</a>
+    <div class="container">
+        <div class="slider">
+            <div class="pic link"></div>
+            <div class="pic marilyn"></div>
+            <div class="pic pikachu"></div>
+        </div>
+    </div>
+    <script>
+        let i = 0;
+        const sliderWidth = 256;
+        const slider = document.querySelector('.slider');
+        const moveSlider = () => {
+            i = i > -2 ? i - 1 : 1;
+            slider.style.marginLeft = sliderWidth * i + 'px';
+        }
+        document.querySelector('.btn').addEventListener('click', moveSlider);
+    </script>
+</body>
+
+</html>
