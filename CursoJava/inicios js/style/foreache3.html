@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            margin: auto;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+
+        button {
+            margin: 30px;
+        }
+        input{
+            padding: 5px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>¿Cuál es mejor signo del zodiaco de estos tres?</p>
+
+    <p><input type="radio" name="quest1">Capricornio.</p>
+
+    <p><input type="radio" name="quest1" class="right">Tauro.</p>
+
+    <p><input type="radio" name="quest1">Géminis.</p>
+
+
+    <p>¿De que color es la libreta de matemáticas?</p>
+
+    <p><input type="radio" name="quest2">Roja.</p>
+
+    <p><input type="radio" name="quest2" class="right">Azul.</p>
+
+    <p>¿Es mejor el calor o el frío?</p>
+
+    <p><input type="radio" name="quest3" class="right">Frío.</p>
+
+
+    <p><input type="radio" name="quest3">Calor.</p>
+    <br>
+    <button>Comprobar respuestas</button>
+    <script>
+        const evaluateAnswers = () => {
+            document.querySelectorAll('input[type=radio]').forEach((input) => {
+                input.closest('p').style.backgroundColor = 'transparent';
+            });
+
+            document.querySelectorAll('input[type=radio]:checked').forEach((answer) => {
+                if (answer.classList.contains('right')) {
+                    answer.closest('p').style.backgroundColor = '#a3b18a';
+                } else {
+                    answer.closest('p').style.backgroundColor = '#d90429';
+                }
+            });
+        }
+
+        document.querySelector('button').addEventListener('click', evaluateAnswers);
+    </script>
+</body>
+
+</html>

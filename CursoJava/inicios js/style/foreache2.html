@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: 400px;
+            padding-left: 76px;
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 2rem;
+            padding-left: 248px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Otra Calculadora Cutre Más</h1>
+    <input type="text" id="num"> + <input type="text" id="num"> + <input type="text" id="num"> = 
+    <button type="button">Calcular</button>
+    <p></p>
+    <script>
+
+        const calculate = () => {
+            let plus = 0;
+            document.querySelectorAll('#num').forEach((input) => {
+                plus += Number(input.value);
+                document.querySelector('p').innerHTML = plus;
+            });
+        };
+
+        document.querySelector('button').addEventListener('click', calculate);
+
+    </script>
+</body>
+
+</html>

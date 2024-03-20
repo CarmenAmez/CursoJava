@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="./img/PinguLinux_Ying_Yang.png" id="imagen" width="300px" alt="pingu">
+    <script>
+        let i = 0;
+        let img = document.querySelector('#imagen');
+        const change = () => {
+            i++;
+            if (i%2==0) {
+                img.setAttribute('src', './img/PinguLinux_Ying_Yang.png');
+            } else img.setAttribute('src', './img/PinguLinux_Yoda.jpg');
+        }
+        document.querySelector('#imagen').addEventListener('click', change);
+
+    </script>
+</body>
+
+</html>

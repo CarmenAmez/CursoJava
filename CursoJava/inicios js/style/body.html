@@ -8,15 +8,15 @@
 <body>
         <select name="" id="bodyColor">
             <option value="choose">...</option>
-            <option value="green">Verde</option>
-            <option value="orange">Naranja</option>
-            <option value="pink">Rosa</option>
+            <option value="#588157">Verde</option>
+            <option value="#e85d04">Naranja</option>
+            <option value="#ffe5ec">Rosa</option>
             <option value="#003049">Azul</option>
         </select>
     <script>
         const selecctColor = () => {
             const colorus = document.querySelector('#bodyColor').value;
-            document.querySelector('body').style.backgroundColor = color;
+            document.querySelector('body').style.backgroundColor = colorus;
         }
         document.querySelector('#bodyColor').addEventListener('change', selecctColor);
     </script>

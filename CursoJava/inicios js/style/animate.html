@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .box1 {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: #84a59d;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="jump">Botar</button>
+    <div class="box1"></div>
+    <script>
+
+        const eliminaClases = () => {
+            document.querySelector('.box1').classList.remove('animate__animated', 'animate__bounce');
+        }
+
+        const salta = () => {
+            document.querySelector('.box1').classList.add('animate__animated', 'animate__bounce');
+            document.querySelector('.box1').addEventListener('animationend', () => {
+                document.querySelector('.box1').classList.remove('animate__animated', 'animate__bounce');
+            });
+        }
+
+        document.querySelector('#jump').addEventListener('click', salta);
+
+    </script>
+</body>
+
+</html>
