@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid black;
+            width: 300px;
+        }
+
+        .box {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .result {
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>INTRODUCCIÓN</h2>
+        <p><input type="radio" name="op1">Hola,</p>
+        <p><input type="radio" name="op1">Buenos días,</p>
+        <p><input type="radio" name="op1">Me presento,</p>
+        <p><input type="radio" name="op1">Estimado empresario,</p>
+        <p><input type="radio" name="op1">Mis cordiales saludos,</p>
+    </div>
+    <br>
+    <div class="box">
+        <h2>NOMBRE</h2>
+        <p><input type="radio" name="op2"> me llamo 'X'.</p>
+        <p><input type="radio" name="op2"> mi nombre es 'X'.</p>
+        <p><input type="radio" name="op2"> me identifico como 'X'.</p>
+    </div>
+    <br>
+    <div class="box">
+        <h2>OBJETIVO</h2>
+        <p><input type="radio" name="op3">Mando este correo porque me encantaría trabajar con vosotros.</p>
+        <p><input type="radio" name="op3">Aplico a esta oferta de trabajo porque se adapta a lo que necesito.</p>
+        <p><input type="radio" name="op3">Quisiera demostrarles con este correo mi interes en el puesto vacante.</p>
+        <p><input type="radio" name="op3">Desearía participar en vuestro equipo de trabajo si fuese seleccionada.</p>
+        <p><input type="radio" name="op3">Quiero dejar constancía de mi interés por esta oferta de trabajo.</p>
+    </div>
+    <br>
+    <div class="box">
+        <h2>DESPEDIDA</h2>
+        <p><input type="radio" name="op4">Un cordial saludo.</p>
+        <p><input type="radio" name="op4">Me quedo a la espera de vuestra respuesta.</p>
+        <p><input type="radio" name="op4">Adios.</p>
+        <p><input type="radio" name="op4">Deseandoles un buen día.</p>
+        <p><input type="radio" name="op4">Hasta que nos pongamos en contacto.</p>
+    </div>
+    <div class="result"></div>
+    <script>
+        document.querySelectorAll('[type=radio]').forEach(radio => {
+            radio.addEventListener('change',(event)=>{
+                let text ='';
+                document.querySelectorAll('input[type="radio"]:checked').forEach((radioChecked)=>{
+                    text += '<p>' + radioChecked.closest('p').textContent + '</p>'
+                });
+                document.querySelector('.result').innerHTML = text;
+            })
+        })
+    </script>
+</body>
+
+</html>
