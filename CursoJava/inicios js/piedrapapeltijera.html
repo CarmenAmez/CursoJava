@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 50vh;
+            height: 50vh;
+            border: 2px solid black;
+            border-radius: 5px;
+
+        }
+
+        .container img {
+            width: 45vh;
+            height: 45vh;
+        }
+
+        .ramdon {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .ramdon img {
+            margin-top: 20px;
+            width: 50vh;
+            height: 50vh;
+
+        }
+    </style>
+    <script src="./piedrapapeltijera.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="comprobarSolucion(0)" value="0"> <img src="./style/img/assets/piedra.jpeg" alt=""> </button>
+        <button onclick="comprobarSolucion(1)" value="1"> <img src="./style/img/assets/papel.jpeg" alt=""> </button>
+        <button onclick="comprobarSolucion(2)" value="2"> <img src="./style/img/assets/tijera.jpeg" alt=""> </button>
+
+    </div>
+    <div class="ramdon">
+        <img src="./style/img/assets/question.jpeg" alt="">
+    </div>
+
+</body>
+
+</html>

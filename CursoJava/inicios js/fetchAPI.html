@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejemplo de petición fetch</h1>
+    <ul id="lista"></ul>
+    <script>
+        // Solicitud GET (Request).
+        fetch('https://api.mercadolibre.com/sites/MLA/search?q=malabares')
+    .then(res => res.json())  // convertir a json
+    .then(res => {
+        // Mapear los resultados y crear tags <h2> e <img> para cada elemento
+        const items = res.results.map(item => {
+            return `
+                <div>
+                    <h2>${item.title}</h2>
+                    <img src="${item.thumbnail}" alt="${item.title}">
+                </div>
+            `;
+        }).join('');
+        // Establecer el HTML interno del elemento con ID "lista" para mostrar los títulos e imágenes
+        document.querySelector('#lista').innerHTML = items;
+    })
+    </script>
+</body>
+
+</html>
